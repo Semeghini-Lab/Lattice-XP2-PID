@@ -1,0 +1,251 @@
+
+Loading design for application trce from file pid_impl1_map.ncd.
+Design name: top
+NCD version: 3.3
+Vendor:      LATTICE
+Device:      LFXP2-5E
+Package:     TQFP144
+Performance: 6
+Loading device for application trce from file 'mg5a26x29.nph' in environment: C:/lscc/diamond/3.14/ispfpga.
+Package Status:                     Final          Version 1.42.
+Performance Hardware Data Status:   Final          Version 11.5.
+Setup and Hold Report
+
+--------------------------------------------------------------------------------
+Lattice TRACE Report - Setup, Version Diamond (64-bit) 3.14.0.75.2
+Tue Jul 29 19:10:08 2025
+
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+Copyright (c) 1995 AT&T Corp.   All rights reserved.
+Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+Copyright (c) 2001 Agere Systems   All rights reserved.
+Copyright (c) 2002-2024 Lattice Semiconductor Corporation,  All rights reserved.
+
+Report Information
+------------------
+Command line:    trce -v 1 -gt -mapchkpnt 0 -sethld -o PID_impl1.tw1 -gui -msgset C:/Users/SemeghiniLab/Harvard University Dropbox/Haley Nguyen/RbYb lab/14 Lattice Files/PID/promote.xml PID_impl1_map.ncd PID_impl1.prf 
+Design file:     pid_impl1_map.ncd
+Preference file: pid_impl1.prf
+Device,speed:    LFXP2-5E,6
+Report level:    verbose report, limited to 1 item per preference
+--------------------------------------------------------------------------------
+
+BLOCK ASYNCPATHS
+BLOCK RESETPATHS
+--------------------------------------------------------------------------------
+
+
+
+================================================================================
+Preference: FREQUENCY NET "i_clk_c" 50.000000 MHz ;
+            0 items scored, 0 timing errors detected.
+--------------------------------------------------------------------------------
+
+
+================================================================================
+Preference: FREQUENCY NET "clk_100mhz" 100.000000 MHz ;
+            325 items scored, 0 timing errors detected.
+--------------------------------------------------------------------------------
+
+
+Passed: The following path meets requirements by 7.751ns
+
+ Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
+
+   Source:         FF         Q              r_counter_16__i1  (from clk_100mhz +)
+   Destination:    FF         Data in        r_counter_16__i24  (to clk_100mhz +)
+
+   Delay:               2.171ns  (88.8% logic, 11.2% route), 13 logic levels.
+
+ Constraint Details:
+
+      2.171ns physical path delay SLICE_12 to SLICE_0 meets
+     10.000ns delay constraint less
+      0.078ns DIN_SET requirement (totaling 9.922ns) by 7.751ns
+
+ Physical Path Details:
+
+      Data path SLICE_12 to SLICE_0:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+REG_DEL     ---     0.370   SLICE_12.CLK to    SLICE_12.Q0 SLICE_12 (from clk_100mhz)
+ROUTE         1   e 0.232    SLICE_12.Q0 to    SLICE_12.A0 n24
+C0TOFCO_DE  ---     0.561    SLICE_12.A0 to   SLICE_12.FCO SLICE_12
+ROUTE         1   e 0.001   SLICE_12.FCO to   SLICE_10.FCI n241
+FCITOFCO_D  ---     0.068   SLICE_10.FCI to   SLICE_10.FCO SLICE_10
+ROUTE         1   e 0.001   SLICE_10.FCO to    SLICE_9.FCI n242
+FCITOFCO_D  ---     0.068    SLICE_9.FCI to    SLICE_9.FCO SLICE_9
+ROUTE         1   e 0.001    SLICE_9.FCO to    SLICE_8.FCI n243
+FCITOFCO_D  ---     0.068    SLICE_8.FCI to    SLICE_8.FCO SLICE_8
+ROUTE         1   e 0.001    SLICE_8.FCO to    SLICE_7.FCI n244
+FCITOFCO_D  ---     0.068    SLICE_7.FCI to    SLICE_7.FCO SLICE_7
+ROUTE         1   e 0.001    SLICE_7.FCO to    SLICE_6.FCI n245
+FCITOFCO_D  ---     0.068    SLICE_6.FCI to    SLICE_6.FCO SLICE_6
+ROUTE         1   e 0.001    SLICE_6.FCO to    SLICE_5.FCI n246
+FCITOFCO_D  ---     0.068    SLICE_5.FCI to    SLICE_5.FCO SLICE_5
+ROUTE         1   e 0.001    SLICE_5.FCO to    SLICE_4.FCI n247
+FCITOFCO_D  ---     0.068    SLICE_4.FCI to    SLICE_4.FCO SLICE_4
+ROUTE         1   e 0.001    SLICE_4.FCO to    SLICE_3.FCI n248
+FCITOFCO_D  ---     0.068    SLICE_3.FCI to    SLICE_3.FCO SLICE_3
+ROUTE         1   e 0.001    SLICE_3.FCO to    SLICE_2.FCI n249
+FCITOFCO_D  ---     0.068    SLICE_2.FCI to    SLICE_2.FCO SLICE_2
+ROUTE         1   e 0.001    SLICE_2.FCO to    SLICE_1.FCI n250
+FCITOFCO_D  ---     0.068    SLICE_1.FCI to    SLICE_1.FCO SLICE_1
+ROUTE         1   e 0.001    SLICE_1.FCO to    SLICE_0.FCI n251
+FCITOF1_DE  ---     0.316    SLICE_0.FCI to     SLICE_0.F1 SLICE_0
+ROUTE         1   e 0.001     SLICE_0.F1 to    SLICE_0.DI1 n106 (to clk_100mhz)
+                  --------
+                    2.171   (88.8% logic, 11.2% route), 13 logic levels.
+
+Report:  444.642MHz is the maximum frequency for this preference.
+
+Report Summary
+--------------
+----------------------------------------------------------------------------
+Preference                              |   Constraint|       Actual|Levels
+----------------------------------------------------------------------------
+                                        |             |             |
+FREQUENCY NET "i_clk_c" 50.000000 MHz ; |            -|            -|   0  
+                                        |             |             |
+FREQUENCY NET "clk_100mhz" 100.000000   |             |             |
+MHz ;                                   |  100.000 MHz|  444.642 MHz|  13  
+                                        |             |             |
+----------------------------------------------------------------------------
+
+
+All preferences were met.
+
+
+Clock Domains Analysis
+------------------------
+
+Found 2 clocks:
+
+Clock Domain: i_clk_c   Source: i_clk.PAD   Loads: 1
+   No transfer within this clock domain is found
+
+Clock Domain: clk_100mhz   Source: u_pll/PLLInst_0.CLKOP   Loads: 14
+   Covered under: FREQUENCY NET "clk_100mhz" 100.000000 MHz ;
+
+
+Timing summary (Setup):
+---------------
+
+Timing errors: 0  Score: 0
+Cumulative negative slack: 0
+
+Constraints cover 325 paths, 2 nets, and 116 connections (98.31% coverage)
+
+--------------------------------------------------------------------------------
+Lattice TRACE Report - Hold, Version Diamond (64-bit) 3.14.0.75.2
+Tue Jul 29 19:10:08 2025
+
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+Copyright (c) 1995 AT&T Corp.   All rights reserved.
+Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+Copyright (c) 2001 Agere Systems   All rights reserved.
+Copyright (c) 2002-2024 Lattice Semiconductor Corporation,  All rights reserved.
+
+Report Information
+------------------
+Command line:    trce -v 1 -gt -mapchkpnt 0 -sethld -o PID_impl1.tw1 -gui -msgset C:/Users/SemeghiniLab/Harvard University Dropbox/Haley Nguyen/RbYb lab/14 Lattice Files/PID/promote.xml PID_impl1_map.ncd PID_impl1.prf 
+Design file:     pid_impl1_map.ncd
+Preference file: pid_impl1.prf
+Device,speed:    LFXP2-5E,M
+Report level:    verbose report, limited to 1 item per preference
+--------------------------------------------------------------------------------
+
+BLOCK ASYNCPATHS
+BLOCK RESETPATHS
+--------------------------------------------------------------------------------
+
+
+
+================================================================================
+Preference: FREQUENCY NET "i_clk_c" 50.000000 MHz ;
+            0 items scored, 0 timing errors detected.
+--------------------------------------------------------------------------------
+
+
+================================================================================
+Preference: FREQUENCY NET "clk_100mhz" 100.000000 MHz ;
+            325 items scored, 0 timing errors detected.
+--------------------------------------------------------------------------------
+
+
+Passed: The following path meets requirements by 0.282ns
+
+ Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
+
+   Source:         FF         Q              r_counter_16__i23  (from clk_100mhz +)
+   Destination:    FF         Data in        r_counter_16__i23  (to clk_100mhz +)
+
+   Delay:               0.283ns  (63.3% logic, 36.7% route), 2 logic levels.
+
+ Constraint Details:
+
+      0.283ns physical path delay SLICE_0 to SLICE_0 meets
+      0.001ns DIN_HLD and
+      0.000ns delay constraint requirement (totaling 0.001ns) by 0.282ns
+
+ Physical Path Details:
+
+      Data path SLICE_0 to SLICE_0:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+REG_DEL     ---     0.120    SLICE_0.CLK to     SLICE_0.Q0 SLICE_0 (from clk_100mhz)
+ROUTE         1   e 0.103     SLICE_0.Q0 to     SLICE_0.A0 n2
+CTOF_DEL    ---     0.059     SLICE_0.A0 to     SLICE_0.F0 SLICE_0
+ROUTE         1   e 0.001     SLICE_0.F0 to    SLICE_0.DI0 n107 (to clk_100mhz)
+                  --------
+                    0.283   (63.3% logic, 36.7% route), 2 logic levels.
+
+Report Summary
+--------------
+----------------------------------------------------------------------------
+Preference(MIN Delays)                  |   Constraint|       Actual|Levels
+----------------------------------------------------------------------------
+                                        |             |             |
+FREQUENCY NET "i_clk_c" 50.000000 MHz ; |            -|            -|   0  
+                                        |             |             |
+FREQUENCY NET "clk_100mhz" 100.000000   |             |             |
+MHz ;                                   |     0.000 ns|     0.282 ns|   2  
+                                        |             |             |
+----------------------------------------------------------------------------
+
+
+All preferences were met.
+
+
+Clock Domains Analysis
+------------------------
+
+Found 2 clocks:
+
+Clock Domain: i_clk_c   Source: i_clk.PAD   Loads: 1
+   No transfer within this clock domain is found
+
+Clock Domain: clk_100mhz   Source: u_pll/PLLInst_0.CLKOP   Loads: 14
+   Covered under: FREQUENCY NET "clk_100mhz" 100.000000 MHz ;
+
+
+Timing summary (Hold):
+---------------
+
+Timing errors: 0  Score: 0
+Cumulative negative slack: 0
+
+Constraints cover 325 paths, 2 nets, and 116 connections (98.31% coverage)
+
+
+
+Timing summary (Setup and Hold):
+---------------
+
+Timing errors: 0 (setup), 0 (hold)
+Score: 0 (setup), 0 (hold)
+Cumulative negative slack: 0 (0+0)
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+

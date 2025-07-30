@@ -1,0 +1,319 @@
+<HTML>
+<HEAD><TITLE>Project Summary</TITLE>
+<STYLE TYPE="text/css">
+<!--
+ body,pre{    font-family:'Courier New', monospace;    color: #000000;    font-size:88%;    background-color: #ffffff;}h1 {    font-weight: bold;    margin-top: 24px;    margin-bottom: 10px;    border-bottom: 3px solid #000;    font-size: 1em;}h2 {    font-weight: bold;    margin-top: 18px;    margin-bottom: 5px;    font-size: 0.90em;}h3 {    font-weight: bold;    margin-top: 12px;    margin-bottom: 5px;    font-size: 0.80em;}p {    font-size:78%;}P.Table {    margin-top: 4px;    margin-bottom: 4px;    margin-right: 4px;    margin-left: 4px;}table{    border-width: 1px 1px 1px 1px;    border-style: solid solid solid solid;    border-color: black black black black;    border-collapse: collapse;}th {    font-weight:bold;    padding: 4px;    border-width: 1px 1px 1px 1px;    border-style: solid solid solid solid;    border-color: black black black black;    vertical-align:top;    text-align:left;    font-size:78%;}td {    padding: 4px;    border-width: 1px 1px 1px 1px;    border-style: solid solid solid solid;    border-color: black black black black;    vertical-align:top;    font-size:78%;}a {    color:#013C9A;    text-decoration:none;}a:visited {    color:#013C9A;}a:hover, a:active {    text-decoration:underline;    color:#5BAFD4;}.pass{background-color: #00ff00;}.fail{background-color: #ff0000;}.comment{    font-size: 90%;    font-style: italic;}
+-->
+</STYLE>
+</HEAD>
+<PRE><A name="Mrp"></A>
+             Lattice Mapping Report File for Design Module 'top'
+
+
+
+<A name="mrp_di"></A><B><U><big>Design Information</big></U></B>
+
+Command line:   map -a LatticeXP2 -p LFXP2-5E -t TQFP144 -s 6 -oc Industrial
+     PID_impl1.ngd -o PID_impl1_map.ncd -pr PID_impl1.prf -mp PID_impl1.mrp -lpf
+     C:/Users/SemeghiniLab/Harvard University Dropbox/Haley Nguyen/RbYb lab/14
+     Lattice Files/PID/impl1/PID_impl1.lpf -lpf C:/Users/SemeghiniLab/Harvard
+     University Dropbox/Haley Nguyen/RbYb lab/14 Lattice Files/PID/PID.lpf -gui
+     -msgset C:/Users/SemeghiniLab/Harvard University Dropbox/Haley Nguyen/RbYb
+     lab/14 Lattice Files/PID/promote.xml 
+Target Vendor:  LATTICE
+Target Device:  LFXP2-5ETQFP144
+Target Performance:   6
+Mapper:  mg5a00,  version:  Diamond (64-bit) 3.14.0.75.2
+Mapped on:  07/29/25  19:10:07
+
+
+<A name="mrp_ds"></A><B><U><big>Design Summary</big></U></B>
+   Number of registers:     25 out of  3864 (1%)
+      PFU registers:           25 out of  3564 (1%)
+      PIO registers:            0 out of   300 (0%)
+   Number of SLICEs:        15 out of  2376 (1%)
+      SLICEs as Logic/ROM:     15 out of  2376 (1%)
+      SLICEs as RAM:            0 out of   405 (0%)
+      SLICEs as Carry:         13 out of  2376 (1%)
+   Number of LUT4s:         28 out of  4752 (1%)
+      Number used as logic LUTs:          2
+      Number used as distributed RAM:     0
+      Number used as ripple logic:       26
+      Number used as shift registers:     0
+   Number of PIO sites used: 3 out of 100 (3%)
+   Number of PIO FIXEDDELAY:    0
+   Number of DQSDLLs:  0 out of 2 (0%)
+   Number of PLLs:  1 out of 2 (50%)
+   Number of block RAMs:  0 out of 9 (0%)
+   Number of CLKDIVs:  0 out of 2 (0%)
+   Number of GSRs:  0 out of 1 (0%)
+   JTAG used :      No
+   Readback used :  No
+   Oscillator used :  No
+   Startup used :   No
+   Notes:-
+      1. Total number of LUT4s = (Number of logic LUT4s) + 2*(Number of
+     distributed RAMs) + 2*(Number of ripple logic)
+      2. Number of logic LUT4s does not include count of distributed RAM and
+     ripple logic.
+
+        Number Of Mapped DSP Components:
+   --------------------------------
+   MULT36X36B          0
+   MULT18X18B          0
+   MULT18X18MACB       0
+   MULT18X18ADDSUBB    0
+   MULT18X18ADDSUBSUMB 0
+   MULT9X9B            0
+   MULT9X9ADDSUBB      0
+   MULT9X9ADDSUBSUMB   0
+
+   --------------------------------
+   Number of Used DSP Sites:  0 out of 24 (0 %)
+   Number of clocks:  2
+     Net i_clk_c: 1 loads, 1 rising, 0 falling (Driver: PIO i_clk )
+     Net clk_100mhz: 14 loads, 14 rising, 0 falling (Driver: u_pll/PLLInst_0 )
+   Number of Clock Enables:  1
+     Net pll_lock: 13 loads, 13 LSLICEs
+   Number of LSRs:  0
+   Number of nets driven by tri-state buffers:  0
+   Top 10 highest fanout non-clock nets:
+     Net VCC_net: 25 loads
+     Net pll_lock: 14 loads
+     Net o_LED_c_24: 2 loads
+     Net n106: 1 loads
+     Net n107: 1 loads
+     Net n108: 1 loads
+     Net n130: 1 loads
+     Net n2: 1 loads
+     Net n25: 1 loads
+     Net o_LED_2_c: 1 loads
+
+
+
+
+   Number of warnings:  2
+   Number of errors:    0
+     
+
+
+
+
+<A name="mrp_dwe"></A><B><U><big>Design Errors/Warnings</big></U></B>
+
+WARNING - map: C:/Users/SemeghiniLab/Harvard University Dropbox/Haley
+     Nguyen/RbYb lab/14 Lattice Files/PID/PID.lpf(4): Semantic error in "LOCATE
+     COMP "i_switch" SITE "50" ;": COMP "i_switch" cannot be found in design.
+     This preference has been disabled.
+WARNING - map: C:/Users/SemeghiniLab/Harvard University Dropbox/Haley
+     Nguyen/RbYb lab/14 Lattice Files/PID/PID.lpf(6): Semantic error in "IOBUF
+     PORT "i_switch" PULLMODE=DOWN IO_TYPE=LVCMOS25 ;": Port "i_switch" does not
+     exist in the design. This preference has been disabled.
+
+
+
+<A name="mrp_ioa"></A><B><U><big>IO (PIO) Attributes</big></U></B>
+
++---------------------+-----------+-----------+------------+------------+
+| IO Name             | Direction | Levelmode | IO         | FIXEDDELAY |
+|                     |           |  IO_TYPE  | Register   |            |
++---------------------+-----------+-----------+------------+------------+
+| i_clk               | INPUT     | LVCMOS25  |            |            |
++---------------------+-----------+-----------+------------+------------+
+| o_LED_2             | OUTPUT    | LVCMOS25  |            |            |
++---------------------+-----------+-----------+------------+------------+
+| o_LED               | OUTPUT    | LVCMOS25  |            |            |
++---------------------+-----------+-----------+------------+------------+
+
+
+
+
+
+
+<A name="mrp_rm"></A><B><U><big>Removed logic</big></U></B>
+
+Block GSR_INST undriven or does not drive anything - clipped.
+Signal r_counter_16_add_4_1/S0 undriven or does not drive anything - clipped.
+Signal r_counter_16_add_4_1/CI undriven or does not drive anything - clipped.
+Signal r_counter_16_add_4_25/CO undriven or does not drive anything - clipped.
+Signal u_pll/PLLInst_0/CLKINTFB undriven or does not drive anything - clipped.
+Signal u_pll/PLLInst_0/CLKOK undriven or does not drive anything - clipped.
+Signal u_pll/PLLInst_0/CLKOS undriven or does not drive anything - clipped.
+
+
+
+<A name="mrp_pll"></A><B><U><big>PLL/DLL Summary</big></U></B>
+---------------
+
+PLL 1:                                     Pin/Node Value
+  PLL Instance Name:                                u_pll/PLLInst_0
+  PLL Type:                                         EPLLD
+  Input Clock:                             PIN      i_clk_c
+  Output Clock(P):                         NODE     clk_100mhz
+  Output Clock(S):                                  NONE
+  Output Clock(K):                                  NONE
+  PLL Feedback Signal:                     NODE     clk_100mhz
+  PLL Reset Signal:                                 NONE
+  PLL K Divider Reset Signal:                       NONE
+  PLL LOCK Signal:                         NODE     pll_lock
+  Dynamic Phase Adjust Input 0:                     NONE
+  Dynamic Phase Adjust Input 1:                     NONE
+  Dynamic Phase Adjust Input 2:                     NONE
+  Dynamic Phase Adjust Input 3:                     NONE
+  Dynamic Duty Adjust Input 0:                      NONE
+  Dynamic Duty Adjust Input 1:                      NONE
+  Dynamic Duty Adjust Input 2:                      NONE
+  Dynamic Duty Adjust Input 3:                      NONE
+  Input Clock Frequency (MHz):                      50.0000
+  Output Clock(P) Frequency (MHz):                  100.0000
+  Output Clock(K) Frequency (MHz):                  NA
+  Output Clock(P) Actual Frequency:                 100.0000
+  CLKOP BYPASS:                                     DISABLED
+  CLKOS BYPASS:                                     DISABLED
+  CLKOK BYPASS:                                     DISABLED
+  CLKI Divider:                                     1
+  CLKFB Divider:                                    2
+  CLKOP Divider:                                    8
+  CLKOK Divider:                                    2
+  CLKOS Phase Shift (degree):                       0.0
+  CLKOS Duty Cycle (*1/16):                         8
+  Phase_Duty Control:                               STATIC
+  FB_MODE:                                          NONE
+
+
+
+<A name="mrp_asic"></A><B><U><big>ASIC Components</big></U></B>
+---------------
+
+Instance Name: u_pll/PLLInst_0
+         Type: EPLLD
+
+
+
+
+
+
+
+<A name="mrp_runtime"></A><B><U><big>Run Time and Memory Usage</big></U></B>
+-------------------------
+
+   Total CPU Time: 0 secs  
+   Total REAL Time: 0 secs  
+   Peak Memory Usage: 61 MB
+        
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+     Copyright (c) 1995 AT&T Corp.   All rights reserved.
+     Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+     Copyright (c) 2001 Agere Systems   All rights reserved.
+     Copyright (c) 2002-2024 Lattice Semiconductor Corporation,  All rights
+     reserved.
+
+
+
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+</PRE></FONT>
+</BODY>
+</HTML>

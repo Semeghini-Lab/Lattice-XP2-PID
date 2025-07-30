@@ -1,0 +1,44 @@
+(DELAYFILE
+  (SDFVERSION "3.0")
+  (DESIGN "top")
+  (DATE "Fri Jul 25 21:25:39 2025")
+  (VENDOR "Lattice")
+  (PROGRAM "ldbanno")
+  (VERSION "Diamond (64-bit) 3.14.0.75.2")
+  (DIVIDER /)
+  (VOLTAGE 1.26:1.20:1.14)
+  (PROCESS "default")
+  (TEMPERATURE -40:25:85)
+  (TIMESCALE 1ps)
+  (CELL
+    (CELLTYPE "o_LEDB")
+    (INSTANCE o_LEDI)
+    (DELAY
+      (ABSOLUTE
+        (IOPATH PADDO oLED (1114:1114:1114)(1114:1114:1114))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "i_switchB")
+    (INSTANCE i_switchI)
+    (DELAY
+      (ABSOLUTE
+        (IOPATH iswitch PADDI (588:774:960)(588:774:960))
+      )
+    )
+    (TIMINGCHECK
+      (WIDTH (posedge iswitch) (0:0:0))
+      (WIDTH (negedge iswitch) (0:0:0))
+    )
+  )
+  (CELL
+    (CELLTYPE "top")
+    (INSTANCE )
+    (DELAY
+      (ABSOLUTE
+        (INTERCONNECT i_switchI/PADDI o_LEDI/PADDO (485:604:723)(485:604:723))
+      )
+    )
+  )
+)

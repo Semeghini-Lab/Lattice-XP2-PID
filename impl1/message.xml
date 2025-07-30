@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<BaliMessageLog>
+    <Task name="Bitgen">
+        <Message>
+            <ID>1009992</ID>
+            <Severity>Info</Severity>
+            <Dynamic> SW_XO3D_SECURITY_ENCRYPTION *NOT* controlled by mg5a00.acd ###</Dynamic>
+        </Message>
+        <Message>
+            <ID>1009992</ID>
+            <Severity>Info</Severity>
+            <Dynamic> SW_XO3D_SECURITY_ENCRYPTION license_securityIP OK</Dynamic>
+        </Message>
+    </Task>
+    <Task name="Map">
+        <Message>
+            <ID>1100679</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>C:/Users/SemeghiniLab/Harvard University Dropbox/Haley Nguyen/RbYb lab/14 Lattice Files/PID/PID.lpf(4): Semantic error in &quot;LOCATE COMP &quot;i_switch&quot; SITE &quot;50&quot; ;&quot;: </Dynamic>
+            <Dynamic>i_switch</Dynamic>
+            <Navigation>C:/Users/SemeghiniLab/Harvard University Dropbox/Haley Nguyen/RbYb lab/14 Lattice Files/PID/PID.lpf</Navigation>
+            <Navigation>4</Navigation>
+        </Message>
+        <Message>
+            <ID>1100644</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>C:/Users/SemeghiniLab/Harvard University Dropbox/Haley Nguyen/RbYb lab/14 Lattice Files/PID/PID.lpf(6): Semantic error in &quot;IOBUF PORT &quot;i_switch&quot; PULLMODE=DOWN IO_TYPE=LVCMOS25 ;&quot;: </Dynamic>
+            <Dynamic>i_switch</Dynamic>
+            <Navigation>C:/Users/SemeghiniLab/Harvard University Dropbox/Haley Nguyen/RbYb lab/14 Lattice Files/PID/PID.lpf</Navigation>
+            <Navigation>6</Navigation>
+        </Message>
+    </Task>
+    <Task name="Lattice_Synthesis">
+        <Message>
+            <ID>35002000</ID>
+            <Severity>Info</Severity>
+        </Message>
+        <Message>
+            <ID>35001781</ID>
+            <Severity>Info</Severity>
+        </Message>
+        <Message>
+            <ID>35901018</ID>
+            <Severity>Info</Severity>
+            <Dynamic>c:/users/semeghinilab/harvard university dropbox/haley nguyen/rbyb lab/14 lattice files/pid/top.v(1): </Dynamic>
+            <Dynamic>top</Dynamic>
+            <Navigation>c:/users/semeghinilab/harvard university dropbox/haley nguyen/rbyb lab/14 lattice files/pid/top.v</Navigation>
+            <Navigation>1</Navigation>
+        </Message>
+        <Message>
+            <ID>35901018</ID>
+            <Severity>Info</Severity>
+            <Dynamic>c:/users/semeghinilab/harvard university dropbox/haley nguyen/rbyb lab/14 lattice files/pid/pll_50_in.v(8): </Dynamic>
+            <Dynamic>pll_50_in</Dynamic>
+            <Navigation>c:/users/semeghinilab/harvard university dropbox/haley nguyen/rbyb lab/14 lattice files/pid/pll_50_in.v</Navigation>
+            <Navigation>8</Navigation>
+        </Message>
+        <Message>
+            <ID>35901018</ID>
+            <Severity>Info</Severity>
+            <Dynamic>C:/lscc/diamond/3.14/ispfpga/userware/NT/SYNTHESIS_HEADERS/xp2.v(1274): </Dynamic>
+            <Dynamic>VLO</Dynamic>
+            <Navigation>C:/lscc/diamond/3.14/ispfpga/userware/NT/SYNTHESIS_HEADERS/xp2.v</Navigation>
+            <Navigation>1274</Navigation>
+        </Message>
+        <Message>
+            <ID>35901018</ID>
+            <Severity>Info</Severity>
+            <Dynamic>C:/lscc/diamond/3.14/ispfpga/userware/NT/SYNTHESIS_HEADERS/xp2.v(263): </Dynamic>
+            <Dynamic>EPLLD1</Dynamic>
+            <Navigation>C:/lscc/diamond/3.14/ispfpga/userware/NT/SYNTHESIS_HEADERS/xp2.v</Navigation>
+            <Navigation>263</Navigation>
+        </Message>
+        <Message>
+            <ID>35901209</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>c:/users/semeghinilab/harvard university dropbox/haley nguyen/rbyb lab/14 lattice files/pid/top.v(22): </Dynamic>
+            <Dynamic>32</Dynamic>
+            <Dynamic>25</Dynamic>
+            <Navigation>c:/users/semeghinilab/harvard university dropbox/haley nguyen/rbyb lab/14 lattice files/pid/top.v</Navigation>
+            <Navigation>22</Navigation>
+        </Message>
+        <Message>
+            <ID>35001611</ID>
+            <Severity>Warning</Severity>
+        </Message>
+    </Task>
+    <Task name="PAR">
+        <Message>
+            <ID>61031122</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>i_clk_c</Dynamic>
+            <Dynamic>u_pll/PLLInst_0</Dynamic>
+            <Dynamic>CLKI</Dynamic>
+        </Message>
+    </Task>
+    <Task name="TimingSimFileVHD">
+        <Message>
+            <ID>35400250</ID>
+            <Severity>Info</Severity>
+            <Dynamic>0</Dynamic>
+        </Message>
+    </Task>
+    <Task name="TimingSimFileVlg">
+        <Message>
+            <ID>35400250</ID>
+            <Severity>Info</Severity>
+            <Dynamic>0</Dynamic>
+        </Message>
+    </Task>
+</BaliMessageLog>

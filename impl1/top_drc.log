@@ -1,0 +1,16 @@
+Results of NGD DRC are available in top_drc.log.
+Loading NGL library 'C:/lscc/diamond/3.14/ispfpga/mg5a00/data/mg5alib.ngl'...
+Loading NGL library 'C:/lscc/diamond/3.14/ispfpga/ep5a00/data/ep5alib.ngl'...
+Loading NGL library 'C:/lscc/diamond/3.14/ispfpga/ep5g00/data/ep5glib.ngl'...
+Loading NGL library 'C:/lscc/diamond/3.14/ispfpga/or5g00/data/orc5glib.ngl'...
+
+
+Running DRC...
+
+DRC complete with no errors or warnings
+
+Design Results:
+     47 blocks expanded
+completed the first expansion
+All blocks are expanded and NGD expansion is successful.
+Writing NGD file PID_impl1.ngd.

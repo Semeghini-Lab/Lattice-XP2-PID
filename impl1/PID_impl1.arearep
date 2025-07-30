@@ -1,0 +1,23 @@
+----------------------------------------------------------------------
+Report for cell top.TECH
+Register bits:  25 of 3864 (0.647%)
+I/O cells:      3
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                              CCU2B        13          100.0
+                             EPLLD1         1          100.0
+                            FD1P3AX        25          100.0
+                                GSR         1          100.0
+                                 IB         1          100.0
+                               LUT4         1          100.0
+                                 OB         2          100.0
+SUB MODULES
+                          pll_50_in         1
+                              TOTAL        45
+----------------------------------------------------------------------
+Report for cell pll_50_in.v1
+Instance Path : u_pll
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                             EPLLD1         1          100.0
+                              TOTAL         1
